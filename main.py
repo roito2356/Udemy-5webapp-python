@@ -29,10 +29,10 @@ latest_iteration = st.empty()　#空要素
 bar = st.progress(0)　#プログレスバー定義
 st.write(":::::::::")
 
-for i in range(100):　#１００回繰り返し処理
+for i in range(100):　#100回繰り返し処理
     latest_iteration.text(f"Iteration {i+1}")　#進行状況を１ずつ更新
     bar.progress(i + 1)　#プログレスバーを１ずつ更新
-    time.sleep(0.1)　#繰り返しのたびに0.1止まる（0.1間隔で処理実行）
+    time.sleep(0.1)　#繰り返しのたびに0.1止まる（0.01間隔で処理実行）
 ```
 """
 
@@ -45,7 +45,7 @@ st.write(":::::::::")
 for i in range(100):
     latest_iteration.text(f"Iteration {i+1}")
     bar.progress(i + 1)
-    time.sleep(0.1)
+    time.sleep(0.01)
 
 
 """
