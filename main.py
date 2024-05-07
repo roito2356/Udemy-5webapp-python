@@ -32,7 +32,7 @@ st.write(":::::::::")
 for i in range(100):　#100回繰り返し処理
     latest_iteration.text(f"Iteration {i+1}")　#進行状況を１ずつ更新
     bar.progress(i + 1)　#プログレスバーを１ずつ更新
-    time.sleep(0.1)　#繰り返しのたびに0.1止まる（0.01間隔で処理実行）
+    time.sleep(0.01)　#繰り返しのたびに0.01止まる（0.01間隔で処理実行）
 ```
 """
 
